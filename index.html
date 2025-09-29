@@ -37,11 +37,11 @@
 
         tarjeta.innerHTML = `
             <div class="imgCont" style = "background-image: linear-gradient(to bottom, ${item.color}, #f4f4f4);">
-              <img src="${item.refImg}" alt="imagen de referencia">
+              <img src='${item.refImg}' alt="imagen de referencia">
             </div>
-            <h3>${item.icon} ${item.titulo}</h3>
-            <p>${item.descripcion}</p>
-            <a href="${item.link}" target="_blank">Ver más</a>
+            <h3>'${item.icon}'' '${item.titulo}'</h3>
+            <p>'${item.descripcion}'</p>
+            <a href='${item.link}'' target="_blank">Ver más</a>
         `;
 
         contenedor.appendChild(tarjeta);
