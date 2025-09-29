@@ -1,5 +1,6 @@
 [
   {
+    "color":"#888",
     "refImg":"Img/globe.svg",
     "icon": "🌍",
     "titulo": "Mundo Web",
@@ -7,6 +8,7 @@
     "link": "https://ejemplo.com"
   },
   {
+    "color":"#888",
     "refImg":"Img/settings.svg",
     "icon": "⚙️",
     "titulo": "Automatizacion/Mecatronica",
@@ -14,6 +16,7 @@
     "link": "https://otraweb.com"
   },
   {
+    "color":"#888",
     "refImg":"Img/bookmark.svg",
     "icon": "🥇",
     "titulo": "certificados",
@@ -21,6 +24,7 @@
     "link": "https://otraweb.com"
   },
   {
+    "color":"#888",
     "refImg":"Img/terminal.svg",
     "icon": "💻",
     "titulo": "Programacion",
