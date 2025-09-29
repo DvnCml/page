@@ -10,7 +10,7 @@
     .tarjeta .imgCont {width: 100%;height: 120px;border-radius: 10px; display: flex;justify-content: center;align-items: center;}
     .tarjeta img {width: 75%; height: 75%;}
     .tarjeta h3 {margin: 10px 0; padding-top: 10px; color: #000;border-top: 2px solid #555;}
-    .tarjeta p {font-size: 1em;color: #555; height: 2em;}
+    .tarjeta p {font-size: 1em;color: #555; height: 3em;}
     .tarjeta a {margin-top: 10px;padding:15px 30px;float: right; /*color: #3498db*/color: #f4f4f4; text-decoration: none; background-color:slategray; border-radius: 10px;}
     .tarjeta a:hover{/*padding: 20PX;*/ transition: 0.25ms; border: solid 2px slategray; background-color: #f4f4f4; color: currentColor; padding: 13px 33px;box-shadow: 0px 5px 10px #888888;} 
     .contenedor {display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;}
@@ -24,30 +24,34 @@
     const contenedor = document.getElementById("contenedor");
 
     fetch("data.json")
-    .then(response => {
+      .then(response => {
         if (!response.ok) {
-        throw new Error("Error al cargar el JSON");
+          throw new Error("Error al cargar el JSON");
         }
         return response.json();
-    })
-    .then(data => {
-        data.forEach(item => {
-        const tarjeta = document.createElement("div");
-        tarjeta.classList.add("tarjeta");
+      })
+      .then(data => {
+        //console para depurar cargado del Json
+        console.log("✅ JSON cargado:", data);
+        console.log("🔍 tarjetas:", data.tarjetaP);
+        // CORREGIDO: usar "tarjetaP" en lugar de "tarjeta"
+        data.tarjetaP.forEach(item => {
+          const tarjeta = document.createElement("div");
+          tarjeta.classList.add("tarjeta");
 
-        tarjeta.innerHTML = `
-            <div class="imgCont" style = "background-image: linear-gradient(to bottom, ${item.color}, #f4f4f4);">
-              <img src='${item.refImg}' alt="imagen de referencia">
+          tarjeta.innerHTML = `
+            <div class="imgCont" style="background-image: linear-gradient(to bottom, ${item.color}, #f4f4f4);">
+              <img src="${item.refImg}" alt="imagen de referencia">
             </div>
-            <h3>'${item.icon}'' '${item.titulo}'</h3>
-            <p>'${item.descripcion}'</p>
-            <a href='${item.link}'' target="_blank">Ver más</a>
-        `;
+            <h3>${item.icon} ${item.titulo}</h3>
+            <p>${item.descripcion}</p>
+            <a href="${item.link}" target="_blank">Ver más</a>
+          `;
 
-        contenedor.appendChild(tarjeta);
+          contenedor.appendChild(tarjeta);
         });
-    })
-    .catch(error => console.error(error));
+      })
+      .catch(error => console.error("Error al procesar JSON:", error));
 
   </script>
 </body>

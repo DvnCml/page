@@ -1,4 +1,15 @@
-[
+{
+"social" : [
+    { "Icon": "url", "Text" : "nobreRS" , "Url": "url" },
+    { "Icon": "url", "Text" : "nobreRS" , "Url": "url" },
+    { "Icon": "url", "Text" : "nobreRS" , "Url": "url" }
+  ],
+
+"boton" : [
+    {"Icon": "url", "Text" : "nobreRS"},
+    {"Icon": "url", "Text" : "nobreRS"}
+],
+ "tarjeta":[
   {
     "color":"#888",
     "refImg":"Img/globe.svg",
@@ -32,3 +43,4 @@
     "link": "https://otraweb.com"
   }
 ]
+}
