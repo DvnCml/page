@@ -1,0 +1,30 @@
+[
+  {
+    "refImg":"Img/globe.svg",
+    "icon": "🌍",
+    "titulo": "Mundo Web",
+    "descripcion": "Un ejemplo de tarjeta generada desde JSON.",
+    "link": "https://ejemplo.com"
+  },
+  {
+    "refImg":"Img/settings.svg",
+    "icon": "⚙️",
+    "titulo": "Automatizacion/Mecatronica",
+    "descripcion": "Tecnologo en diseño e integracion de automatismos mecatronicos",
+    "link": "https://otraweb.com"
+  },
+  {
+    "refImg":"Img/bookmark.svg",
+    "icon": "🥇",
+    "titulo": "certificados",
+    "descripcion": "contamos con varios certificados.",
+    "link": "https://otraweb.com"
+  },
+  {
+    "refImg":"Img/terminal.svg",
+    "icon": "💻",
+    "titulo": "Programacion",
+    "descripcion": "lenguajes Java python y algo de web (HTML, CSS, JS,).",
+    "link": "https://otraweb.com"
+  }
+]
