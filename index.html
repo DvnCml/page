@@ -6,19 +6,51 @@
   <title>Tarjetas Dinámicas</title>
   <style>
     body { font-family: Arial; padding: 20px; background: #f4f4f4; align-items: center; }
+
+    a {all: unset;}
+
+    .contenedorusr { flex-wrap: wrap; gap: 15px; justify-content: center;}
+    .contenedorusr .imgCont {width: 100%; display: flex;justify-content: center; align-items: center;}
+    .imgCont div {width: 125px; height: 125px; background-color:black; border-radius: 50%;overflow: hidden; border: 2px solid slategray;}
+    .imgCont div img {width: 100%;}
+
+    .contenedorusr h2{text-decoration: underline;}
+    .contenedorusr h2 , .contenedorusr p {display: flex; justify-content: center; text-align: center;}
+
+    .socialDiv , .contenedorBoton {display: flex; flex-wrap: wrap;  justify-content: center; } 
+    
+    .socialDiv { gap: 5px; margin: 10px 0px;}
+    .contenedorBoton{gap: 0px;position: sticky;top: 0; z-index: 100; background-color: #f4f4f4; border-bottom: solid 1px;} /* <-- se requiere (position: sticky;top: 0; z-index: 100;) */
+
+    .socialDiv a , .contenedorBoton a  {padding: 10px 15px; display: flex; align-items: center; justify-content: center;}
+    .socialDiv a {background-color: dodgerblue; border-radius: 10px;}
+
+    .contenedorBoton a {border-left: 1px solid ;}
+    .contenedorBoton a:first-child {border-left: none;}
+
+    .socialDiv a:hover , .contenedorBoton a:hover {background-color: slategray;}
+    
+    .socialDiv div , .contenedorBoton div {margin-right: 5px; align-items: center;justify-content: center;}
+    .socialDiv div img { width: 75%; height: auto;}
+    .contenedorBoton div img {width: 100%; height: auto;}
+
+    .texto-btn {display: none;}
+
+
+    .contenedor {display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 15px;}
     .tarjeta {background: white; padding: 15px; margin: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 300px; font-family:cursive;}
     .tarjeta .imgCont {width: 100%;height: 120px;border-radius: 10px; display: flex;justify-content: center;align-items: center;}
     .tarjeta img {width: 75%; height: 75%;}
     .tarjeta h3 {margin: 10px 0; padding-top: 10px; color: #000;border-top: 2px solid #555;}
     .tarjeta p {font-size: 1em;color: #555; height: 3em;}
     .tarjeta a {margin-top: 10px;padding:15px 30px;float: right; /*color: #3498db*/color: #f4f4f4; text-decoration: none; background-color:slategray; border-radius: 10px;}
-    .tarjeta a:hover{/*padding: 20PX;*/ transition: 0.25ms; border: solid 2px slategray; background-color: #f4f4f4; color: currentColor; padding: 13px 33px;box-shadow: 0px 5px 10px #888888;} 
-    .contenedor {display: flex; flex-wrap: wrap; gap: 15px; justify-content: center;}
+    .tarjeta a:hover{padding: 20PX; transition: 0.25ms; border: solid 2px slategray; background-color: #f4f4f4; color: currentColor; padding: 13px 33px;box-shadow: 0px 5px 10px #888888;} 
+    
+
   </style>
 </head>
 <body>
   <div class="contenedorusr" id="contenedorusr"></div>
-  <ul class="contenedorSocial" id="contenedorSocial"></ul>
   <div class="contenedorBoton" id="contenedorBoton"></div>
   <div class="contenedor" id="contenedor"></div>
   
@@ -26,7 +58,6 @@
   <script>
     const contenedorusr = document.getElementById("contenedorusr");
     const contenedorBoton = document.getElementById("contenedorBoton");
-    const contenedorSocial = document.getElementById("contenedorSocial");
     const contenedor = document.getElementById("contenedor");
 
     fetch("data.json")
@@ -40,43 +71,49 @@
         
         //console para depurar cargado del Json
         console.log("✅ JSON cargado:", data);
-        console.log("🔍 tarjetas:", data.social);
+        console.log("🔍 tarjetas:", data.usr[0]);
         
-        //creacion elementos usr usando for each
-        data.usr.forEach(item =>{
-          const usr = document.createElement("div");
-          usr.classList.add("usr");
-
-          usr.innerHTML = `
-            <div class="imgCont" style="background-image: linear-gradient(to bottom, ${item.color}, #f4f4f4);">
-              <img src="${item.img}" alt="imagen de usuario">
+        //creacion elementos usr encapsulado en una funcion
+        function usrCll() {
+          contenedorusr.innerHTML =`
+            <div class="imgCont">
+              <div>
+                <img src="${data.usr[0].img}" alt="imagen de usuario">
+              </div>
             </div>
-            <h2>${item.nombre}</h2>
-            <p>${item.descripcion}</p>
+            <h2>${data.usr[0].nombre}</h2>
+            <p>${data.usr[0].descripcion}</p>
           `;
-          contenedorusr.appendChild(usr);
-        });
+        }
 
-        //creacion elementos Social usando for each
+        usrCll(); //funcion de items  usr
+
+        //Creacion div para los botnoes de red social
+        const socialDiv = document.createElement('div');
+        //socialDiv.id = 'socialDiv';
+        socialDiv.classList ='socialDiv'
+
+        contenedorusr.appendChild(socialDiv);
+
+        //creacion elementos Social usando for each encapsulado en containerusr
         data.social.forEach(item =>{
-          const socialBtn = document.createElement("li");
-          socialBtn.classList.add("social");
+          const socialBtn = document.createElement("a");
+          socialBtn.href = `${item.Url}`
 
           socialBtn.innerHTML = `
-             <a href=" ${item.Url}"> <img src="${item.Icon}" alt="imagen social">   ${item.Text}</a>
+              <div><img src="${item.Icon}" alt="imagen social"> </div><span> ${item.Text} </span> 
           `;
-          contenedorSocial.appendChild(socialBtn);
-        
+          //contenedorusr.appendChild(socialBtn);
+          socialDiv.appendChild(socialBtn);
         });
-
 
         //creacion elementos boton usando for each 
         data.boton.forEach(item =>{
-          const boton = document.createElement("ul");
-          boton.classList.add("boton");
-          
+          const boton = document.createElement("a");
+          boton.href = `${item.link}`; //editamos el atributo href
+        
           boton.innerHTML = `
-             <a href=" ${item.Url}"> ${item.Icon} ${item.Text}</a>
+             <div> <img src="${item.Icon}" alt="imgBoton"> </div> <span class="texto-btn">${item.Text}</span>
           `;
           contenedorBoton.appendChild(boton);
         });

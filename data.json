@@ -1,6 +1,6 @@
 {
 "usr" : [
-    {"img":"Img/Usr/user.svg", "nombre":"Dvn", "descripcion":"desarrollador java y python formado en mecatronica"}
+    {"img":"Img/Usr/user.svg", "nombre":"Dvn", "descripcion":"Desarrollador java con conocimientos en python y front (HTML CSS JS), formado en mecatronica. <br><br> Filosofia analisis, documentacion, lapiz y papel.<br>"}
 ],
 
 "social" : [
@@ -11,8 +11,10 @@
   ],
 
 "boton" : [
-    {"Icon": "url", "Text" : "Dev"},
-    {"Icon": "url", "Text" : "Mecatronica"}
+    {"Icon": "Img/Cards/terminal.svg", "Text" : "Dev", "Link": "#"},
+    {"Icon": "Img/Cards/settings.svg", "Text" : "Mecatronica", "Link": "#"},
+    {"Icon": "Img/Boton/file-text.svg", "Text" : "Blog", "Link": "#"},
+    {"Icon": "Img/Usr/user.svg", "Text" : "aboutme", "Link": "#"}
 ],
  "tarjeta":[
   {
@@ -20,7 +22,7 @@
     "refImg":"Img/Cards/globe.svg",
     "icon": "🌍",
     "titulo": "Mundo Web",
-    "descripcion": "Un ejemplo de tarjeta generada desde JSON.",
+    "descripcion": "algo de conocimiento en web Desing (Html Css Js y back en java)",
     "link": "https://ejemplo.com"
   },
   {
