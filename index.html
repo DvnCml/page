@@ -17,10 +17,16 @@
   </style>
 </head>
 <body>
-
+  <div class="contenedorusr" id="contenedorusr"></div>
+  <ul class="contenedorSocial" id="contenedorSocial"></ul>
+  <div class="contenedorBoton" id="contenedorBoton"></div>
   <div class="contenedor" id="contenedor"></div>
+  
     
   <script>
+    const contenedorusr = document.getElementById("contenedorusr");
+    const contenedorBoton = document.getElementById("contenedorBoton");
+    const contenedorSocial = document.getElementById("contenedorSocial");
     const contenedor = document.getElementById("contenedor");
 
     fetch("data.json")
@@ -31,11 +37,52 @@
         return response.json();
       })
       .then(data => {
+        
         //console para depurar cargado del Json
         console.log("✅ JSON cargado:", data);
-        console.log("🔍 tarjetas:", data.tarjetaP);
+        console.log("🔍 tarjetas:", data.social);
+        
+        //creacion elementos usr usando for each
+        data.usr.forEach(item =>{
+          const usr = document.createElement("div");
+          usr.classList.add("usr");
+
+          usr.innerHTML = `
+            <div class="imgCont" style="background-image: linear-gradient(to bottom, ${item.color}, #f4f4f4);">
+              <img src="${item.img}" alt="imagen de usuario">
+            </div>
+            <h2>${item.nombre}</h2>
+            <p>${item.descripcion}</p>
+          `;
+          contenedorusr.appendChild(usr);
+        });
+
+        //creacion elementos Social usando for each
+        data.social.forEach(item =>{
+          const socialBtn = document.createElement("li");
+          socialBtn.classList.add("social");
+
+          socialBtn.innerHTML = `
+             <a href=" ${item.Url}"> <img src="${item.Icon}" alt="imagen social">   ${item.Text}</a>
+          `;
+          contenedorSocial.appendChild(socialBtn);
+        
+        });
+
+
+        //creacion elementos boton usando for each 
+        data.boton.forEach(item =>{
+          const boton = document.createElement("ul");
+          boton.classList.add("boton");
+          
+          boton.innerHTML = `
+             <a href=" ${item.Url}"> ${item.Icon} ${item.Text}</a>
+          `;
+          contenedorBoton.appendChild(boton);
+        });
+        
         // CORREGIDO: usar "tarjetaP" en lugar de "tarjeta"
-        data.tarjetaP.forEach(item => {
+        data.tarjeta.forEach(item => {
           const tarjeta = document.createElement("div");
           tarjeta.classList.add("tarjeta");
 

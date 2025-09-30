@@ -1,18 +1,23 @@
 {
+"usr" : [
+    {"img":"Img/Usr/user.svg", "nombre":"Dvn", "descripcion":"desarrollador java y python formado en mecatronica"}
+],
+
 "social" : [
-    { "Icon": "url", "Text" : "nobreRS" , "Url": "url" },
-    { "Icon": "url", "Text" : "nobreRS" , "Url": "url" },
-    { "Icon": "url", "Text" : "nobreRS" , "Url": "url" }
+    { "Icon": "Img/Social/gitHub.svg", "Text" : "gitHub" , "Url": "url" },
+    { "Icon": "Img/Social/linkedin.svg", "Text" : "linkedin" , "Url": "url" },
+    { "Icon": "Img/Social/youtube.svg", "Text" : "youtube" , "Url": "url" },
+    { "Icon": "Img/Social/music.svg", "Text" : "tiktok" , "Url": "url" }
   ],
 
 "boton" : [
-    {"Icon": "url", "Text" : "nobreRS"},
-    {"Icon": "url", "Text" : "nobreRS"}
+    {"Icon": "url", "Text" : "Dev"},
+    {"Icon": "url", "Text" : "Mecatronica"}
 ],
  "tarjeta":[
   {
     "color":"#888",
-    "refImg":"Img/globe.svg",
+    "refImg":"Img/Cards/globe.svg",
     "icon": "🌍",
     "titulo": "Mundo Web",
     "descripcion": "Un ejemplo de tarjeta generada desde JSON.",
@@ -20,7 +25,7 @@
   },
   {
     "color":"#888",
-    "refImg":"Img/settings.svg",
+    "refImg":"Img/Cards/settings.svg",
     "icon": "⚙️",
     "titulo": "Automatizacion/Mecatronica",
     "descripcion": "Tecnologo en diseño e integracion de automatismos mecatronicos",
@@ -28,7 +33,7 @@
   },
   {
     "color":"#888",
-    "refImg":"Img/bookmark.svg",
+    "refImg":"Img/Cards/bookmark.svg",
     "icon": "🥇",
     "titulo": "certificados",
     "descripcion": "contamos con varios certificados.",
@@ -36,7 +41,7 @@
   },
   {
     "color":"#888",
-    "refImg":"Img/terminal.svg",
+    "refImg":"Img/Cards/terminal.svg",
     "icon": "💻",
     "titulo": "Programacion",
     "descripcion": "lenguajes Java python y algo de web (HTML, CSS, JS,).",
