@@ -19,6 +19,14 @@
  "tarjeta":[
   {
     "color":"#888",
+    "refImg":"Img/Cards/terminal.svg",
+    "icon": "Img/Cards/iconDesc/square-code.svg",
+    "titulo": "Programacion",
+    "descripcion": "lenguajes Java python y algo de web (HTML, CSS, JS,).",
+    "link": "#"
+  },
+  {
+    "color":"#888",
     "refImg":"Img/Cards/globe.svg",
     "icon": "Img/Cards/iconDesc/globe.svg",
     "titulo": "Mundo Web",
@@ -39,14 +47,6 @@
     "icon": "Img/Cards/iconDesc/medal.svg",
     "titulo": "certificados",
     "descripcion": "contamos con varios certificados.",
-    "link": "#"
-  },
-  {
-    "color":"#888",
-    "refImg":"Img/Cards/terminal.svg",
-    "icon": "Img/Cards/iconDesc/square-code.svg",
-    "titulo": "Programacion",
-    "descripcion": "lenguajes Java python y algo de web (HTML, CSS, JS,).",
     "link": "#"
   }
 ]
