@@ -4,54 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tarjetas Dinámicas</title>
-  <style>
-    body { font-family: Arial; padding: 20px; background: #f4f4f4; align-items: center; }
-
-    a {all: unset;}
-
-    .contenedorusr { flex-wrap: wrap; gap: 15px; justify-content: center;}
-    .contenedorusr .imgCont {width: 100%; display: flex;justify-content: center; align-items: center;}
-    .imgCont div {width: 125px; height: 125px; background-color:white; border-radius: 50%;overflow: hidden; border: 2px solid slategray;}
-    .imgCont div img {width: 100%;}
-
-    .contenedorusr h2{text-decoration: underline;}
-    .contenedorusr h2 , .contenedorusr p {display: flex; justify-content: center; text-align: center;}
-
-    .socialDiv , .contenedorBoton {display: flex; flex-wrap: wrap;  justify-content: center; } 
-    
-    .socialDiv { gap: 5px; margin: 10px 0px;}
-    .contenedorBoton{gap: 0px;position: sticky;top: 0; z-index: 100; background-color: #f4f4f4; border-bottom: solid 1px;} /* <-- se requiere (position: sticky;top: 0; z-index: 100;) */
-
-    .socialDiv a , .contenedorBoton a  {padding: 10px 15px; display: flex; align-items: center; justify-content: center;}
-    .socialDiv a {background-color: dodgerblue; border-radius: 10px;}
-
-    .contenedorBoton a {border-left: 1px solid ; border-right: 1px solid;}
-    .contenedorBoton a:last-child  {border-right: 2px solid;}
-    .contenedorBoton a:first-child {border-left: 2px solid;}
-    
-
-    .socialDiv a:hover , .contenedorBoton a:hover {background-color: slategray; transform: translateY(-4px);transition: all 0.3s ease;}
-    
-    .socialDiv div , .contenedorBoton div {margin-right: 5px; align-items: center;justify-content: center;}
-    .socialDiv div img { width: 75%; height: auto;}
-    .contenedorBoton div img {width: 100%; height: auto;}
-
-    .texto-btn {display: none;}
-
-
-    .contenedor {display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin-top: 15px;}
-    .tarjeta {background: white; padding: 15px; margin: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(0,0,0,0.1); width: 300px;}
-    .tarjeta:hover {transform: translateY(-4px);transition: all 0.3s ease;} /* trasladamos los elemntos con animacion y trancicion suave*/
-
-    
-    .tarjeta h3 {font-size: 1.25em;  margin: 10px 0; padding-bottom: 10px;  color: #000;border-bottom: 2px solid slategrey;}
-    .tarjeta h3 img {width:1em; padding-right: 5px; vertical-align: top;}
-    .tarjeta p {font-size: 1em;color: #555; height: 3em;}
-    .tarjeta a {margin-top: 10px;padding:15px 30px;float: right; /*color: #3498db*/color: #f4f4f4; text-decoration: none; background-color:slategray; border-radius: 10px;}
-    .tarjeta a:hover{padding: 20PX; transition: 0.25ms; border: solid 2px slategray; background-color: #f4f4f4; color: currentColor; padding: 13px 33px;box-shadow: 0px 5px 10px #888888;} 
-    
-
-  </style>
+  <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
   <div class="1"></div>
@@ -65,7 +18,7 @@
     const contenedorBoton = document.getElementById("contenedorBoton");
     const contenedor = document.getElementById("contenedor");
 
-    fetch("data.json")
+    fetch("./data/data.json")
       .then(response => {
         if (!response.ok) {
           throw new Error("Error al cargar el JSON");
