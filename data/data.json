@@ -1,0 +1,53 @@
+{
+"usr" : [
+    {"img":"Img/Usr/user1.svg", "nombre":"Dvn", "descripcion":"Pag en proceso de desarrollo <br><br> Desarrollador java con conocimientos en python y front (HTML CSS JS), formado en mecatronica. <br><br> Filosofia analisis, documentacion, lapiz y papel.<br>"}
+],
+
+"social" : [
+    { "Icon": "Img/Social/gitHub.svg", "Text" : "gitHub" , "Url": "#" },
+    { "Icon": "Img/Social/linkedin.svg", "Text" : "linkedin" , "Url": "#" },
+    { "Icon": "Img/Social/youtube.svg", "Text" : "youtube" , "Url": "#" },
+    { "Icon": "Img/Social/music.svg", "Text" : "tiktok" , "Url": "#" }
+  ],
+
+"boton" : [
+    {"Icon": "Img/Cards/square-terminal.svg", "Text" : "Dev", "Link": "#"},
+    {"Icon": "Img/Cards/iconDesc/bot.svg", "Text" : "Mecatronica", "Link": "#"},
+    {"Icon": "Img/Cards/notebook-text.svg", "Text" : "Blog", "Link": "#"},
+    {"Icon": "Img/Cards/square-user.svg", "Text" : "aboutme", "Link": "#"}
+],
+ "tarjeta":[
+  {
+    "color":"#888",
+    "refImg":"Img/Cards/terminal.svg",
+    "icon": "Img/Cards/iconDesc/square-code.svg",
+    "titulo": "Programacion",
+    "descripcion": "lenguajes Java python y algo de web (HTML, CSS, JS,).",
+    "link": "#"
+  },
+  {
+    "color":"#888",
+    "refImg":"Img/Cards/globe.svg",
+    "icon": "Img/Cards/iconDesc/globe.svg",
+    "titulo": "Mundo Web",
+    "descripcion": "algo de conocimiento en web Desing (Html Css Js y back en java)",
+    "link": "#"
+  },
+  {
+    "color":"#888",
+    "refImg":"Img/Cards/settings.svg",
+    "icon": "Img/Cards/iconDesc/bot.svg",
+    "titulo": "Auto / Mecatronica",
+    "descripcion": "Tecnologo en diseño e integracion de automatismos mecatronicos",
+    "link": "#"
+  },
+  {
+    "color":"#888",
+    "refImg":"Img/Cards/bookmark.svg",
+    "icon": "Img/Cards/iconDesc/medal.svg",
+    "titulo": "certificados",
+    "descripcion": "cuento con certificaciones en backEnd con oracle.",
+    "link": "#"
+  }
+]
+}
