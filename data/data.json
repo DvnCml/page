@@ -22,7 +22,7 @@
     "refImg":"Img/Cards/terminal.svg",
     "icon": "Img/Cards/iconDesc/square-code.svg",
     "titulo": "Programacion",
-    "descripcion": "lenguajes Java python y algo de web (HTML, CSS, JS,).",
+    "descripcion": "Lenguajes Java python y algo de web (HTML, CSS, JS,).",
     "link": "#"
   },
   {
@@ -30,7 +30,7 @@
     "refImg":"Img/Cards/globe.svg",
     "icon": "Img/Cards/iconDesc/globe.svg",
     "titulo": "Mundo Web",
-    "descripcion": "algo de conocimiento en web Desing (Html Css Js y back en java)",
+    "descripcion": "Conocimiento en web Desing (Html Css Js y back en java)",
     "link": "#"
   },
   {
@@ -38,7 +38,7 @@
     "refImg":"Img/Cards/settings.svg",
     "icon": "Img/Cards/iconDesc/bot.svg",
     "titulo": "Auto / Mecatronica",
-    "descripcion": "Tecnologo en diseño e integracion de automatismos mecatronicos",
+    "descripcion": "Formacion en diseño e integracion de automatismos mecatronicos",
     "link": "#"
   },
   {
@@ -46,7 +46,7 @@
     "refImg":"Img/Cards/bookmark.svg",
     "icon": "Img/Cards/iconDesc/medal.svg",
     "titulo": "certificados",
-    "descripcion": "cuento con certificaciones en backEnd con oracle.",
+    "descripcion": "Certificaciones en backEnd y OCI con oracle.",
     "link": "#"
   }
 ]
