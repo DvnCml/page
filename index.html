@@ -7,7 +7,6 @@
   <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-  <div class="1"></div>
   <div class="contenedorusr" id="contenedorusr"></div>
   <div class="contenedorBoton" id="contenedorBoton"></div>
   <div class="contenedor" id="contenedor"></div>
@@ -59,7 +58,7 @@
           socialBtn.href = `${item.Url}`
 
           socialBtn.innerHTML = `
-              <div><img src="${item.Icon}" alt="imagen social"> </div><span> ${item.Text} </span> 
+              <img src="${item.Icon}" alt="imagen social" class = "imgContS"><span> ${item.Text} </span> 
           `;
           //contenedorusr.appendChild(socialBtn);
           socialDiv.appendChild(socialBtn);
@@ -71,7 +70,7 @@
           boton.href = `${item.link}`; //editamos el atributo href
         
           boton.innerHTML = `
-             <div> <img src="${item.Icon}" alt="imgBoton"> </div> <span class="texto-btn">${item.Text}</span>
+             <img src="${item.Icon}" alt="imgBoton" class="imgContB"><span class="texto-btn">${item.Text}</span>
           `;
           contenedorBoton.appendChild(boton);
         });
@@ -80,9 +79,8 @@
           const tarjeta = document.createElement("div");
           tarjeta.classList.add("tarjeta");
 
-          tarjeta.innerHTML = `
-             
-            <h3><img src="${item.icon}" alt="imgtitulo" class="imgCont">${item.titulo}</h3>
+          tarjeta.innerHTML = `             
+            <h3><img src="${item.icon}" alt="imgtitulo" class="imgContT">${item.titulo}</h3>
             <p>${item.descripcion}</p>
             <a href="${item.link}" target="_blank">Ver más</a>
           `;
