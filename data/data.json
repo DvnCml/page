@@ -13,19 +13,22 @@
 "boton" : [
     {"Icon": "Img/Cards/square-terminal.svg", "Text" : "Dev", "Link": "#"},
     {"Icon": "Img/Cards/iconDesc/bot.svg", "Text" : "Mecatronica", "Link": "#"},
+    {"Icon": "Img/Cards/iconDesc/wrench.svg", "Text" : "SoporteIT", "Link": "#"},
     {"Icon": "Img/Cards/notebook-text.svg", "Text" : "Blog", "Link": "#"},
-    {"Icon": "Img/Cards/square-user.svg", "Text" : "aboutme", "Link": "#"}
+    {"Icon": "Img/Cards/square-user.svg", "Text" : "Aboutme", "Link": "#"}
 ],
  "tarjeta":[
   {
+    "class" : "Dev",
     "color":"#888",
     "refImg":"Img/Cards/terminal.svg",
     "icon": "Img/Cards/iconDesc/square-code.svg",
-    "titulo": "Programacion",
+    "titulo": "Dev",
     "descripcion": "Lenguajes Java python y algo de web (HTML, CSS, JS,).",
     "link": "#"
   },
   {
+    "class" : "Dev",
     "color":"#888",
     "refImg":"Img/Cards/globe.svg",
     "icon": "Img/Cards/iconDesc/globe.svg",
@@ -34,6 +37,7 @@
     "link": "#"
   },
   {
+    "class" : "Mecatronica",
     "color":"#888",
     "refImg":"Img/Cards/settings.svg",
     "icon": "Img/Cards/iconDesc/bot.svg",
@@ -42,8 +46,18 @@
     "link": "#"
   },
   {
+    "class" : "Dev",
     "color":"#888",
     "refImg":"Img/Cards/bookmark.svg",
+    "icon": "Img/Cards/iconDesc/medal.svg",
+    "titulo": "certificados",
+    "descripcion": "Certificaciones en backEnd y OCI con oracle.",
+    "link": "#"
+  },
+  {
+    "class" : "Mecatronica",
+    "color":"#888",
+    "refImg":"Img/Cards/notebook-task.svg",
     "icon": "Img/Cards/iconDesc/medal.svg",
     "titulo": "certificados",
     "descripcion": "Certificaciones en backEnd y OCI con oracle.",

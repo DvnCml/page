@@ -54,19 +54,23 @@ fetch("./data/data.json")
 
         //creacion elementos boton usando for each 
         data.boton.forEach(item =>{
-
             const boton = document.createElement("a");
-            boton.href = `${item.link}`; //editamos el atributo href
+            /*boton.href = `${item.link}`; //editamos el atributo href*/
+            boton.classList.add("botonMenu");
+            boton.setAttribute("title", item.Text);
+            boton.setAttribute("onclick", `filterTarjetas(event,"${item.Text}")`);
             boton.innerHTML = `
                 <img src="${item.Icon}" alt="imgBoton" class="imgContB"><span class="texto-btn">${item.Text}</span>
             `;
             contenedorBoton.appendChild(boton);
+            
         });
 
         // tarjetas
         data.tarjeta.forEach(item => {
             const tarjeta = document.createElement("div");
             tarjeta.classList= 'tarjeta';
+            tarjeta.classList.add(`${item.class}`)
 
             tarjeta.innerHTML = `             
             <h3><img src="${item.icon}" alt="imgtitulo" class="imgContT">${item.titulo}</h3>
@@ -75,6 +79,34 @@ fetch("./data/data.json")
             `;
 
             contenedorTjts.appendChild(tarjeta);
-    });
+        });
     })
     .catch(error => console.error("Error al procesar JSON:", error));
+
+    function filterTarjetas (evt, botonName){
+        const botonMenu = document.getElementsByClassName("botonMenu");
+        for (i = 0; i < botonMenu.length; i++) {
+            botonMenu[i].classList.remove("active");    //removiendo class active
+        }
+        
+        const tarjetas= document.getElementsByClassName("tarjeta");
+        for (i = 0; i < tarjetas.length; i++) {
+            tarjetas[i].style.display = "none";
+        }
+
+        // recorrer lista de clase botonName para aplicar el display block
+        const tarjetasFiltradas = document.getElementsByClassName(botonName);
+        for (let j = 0; j < tarjetasFiltradas.length; j++) {
+            tarjetasFiltradas[j].style.display = "block";
+        }
+
+        botonMenu[0].setAttribute("id", "defaultSelectBoton");
+        
+        //seleccion primer elemento del menu
+        /*document.getElementById("defaultSelectBoton").click(); //seleccion primer elemento del menu*/
+
+        evt.currentTarget.classList.add("active");
+
+        console.log(botonMenu.length);
+        console.log(evt);
+    }

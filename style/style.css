@@ -24,8 +24,9 @@
 
     .socialDiv a {background-color: dodgerblue; border-radius: 10px;}
     .socialDiv a , .contenedorBoton a  {padding: 12px 15px; text-align: center;}
-    .socialDiv a:hover , .contenedorBoton a:hover, .tarjeta:hover , .tarjeta a:hover {color: currentColor; background-color: #f4f4f4; box-shadow: 0 2px 5px rgba(70,80,90,0.5); transform: translateY(-4px);transition: all 0.3s ease;}/* trasladamos los elemntos con animacion y trancicion suave*/
+    .socialDiv a:hover , .contenedorBoton a:hover, .contenedorBoton a.active, .tarjeta:hover , .tarjeta a:hover {color: currentColor; background-color: #f4f4f4; box-shadow: 0 2px 5px rgba(70,80,90,0.5); transform: translateY(-4px);transition: all 0.3s ease;}/* trasladamos los elemntos con animacion y trancicion suave*/
     .contenedorBoton a {border-bottom: 4px solid white;}
+    .contenedorBoton a img {z-index: 99;}
 
     .contenedorBoton a {border-left: 1px solid ; border-right: 1px solid;}
     .contenedorBoton a:last-child  {border-right: 2px solid;}
