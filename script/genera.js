@@ -43,7 +43,10 @@ fetch("./data/data.json")
         //creacion elementos Social usando for each encapsulado en containerusr
         data.social.forEach(item =>{
             const socialBtn = document.createElement("a");
-            socialBtn.href = `${item.Url}`
+            socialBtn.href = `${item.Url}`;
+            /*socialBtn.setAttribute("onclick", `pendienteAlert()`);*/
+            socialBtn.addEventListener("click", pendienteAlert);
+
 
             socialBtn.innerHTML = `
                 <img src="${item.Icon}" alt="imagen social" class = "imgContS"><span> ${item.Text} </span> 
@@ -58,7 +61,11 @@ fetch("./data/data.json")
             /*boton.href = `${item.link}`; //editamos el atributo href*/
             boton.classList.add("botonMenu");
             boton.setAttribute("title", item.Text);
-            boton.setAttribute("onclick", `filterTarjetas(event,"${item.Text}")`);
+            /*boton.setAttribute("onclick", `filterTarjetas(event,"${item.Text}")`);*/
+            boton.addEventListener("click", (event) => {
+            filterTarjetas(event, item.Text);
+            });
+
             boton.innerHTML = `
                 <img src="${item.Icon}" alt="imgBoton" class="imgContB"><span class="texto-btn">${item.Text}</span>
             `;
@@ -111,4 +118,8 @@ fetch("./data/data.json")
 
         console.log(botonMenu.length);
         console.log(evt);
+    }   
+    
+    function pendienteAlert (){
+        alert("elemento pendinete de agregar, pagina en proceso de desarrollo");
     }
