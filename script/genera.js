@@ -3,7 +3,6 @@ const contenedorusr = document.getElementById("contenedorusr");
 const contenedorBoton = document.getElementById("contenedorBoton");
 const contenedorTjts = document.getElementById("contenedorTjts");
 
-
 fetch("./data/data.json")
 
     .then(response => {
@@ -19,19 +18,15 @@ fetch("./data/data.json")
         console.log("🔍 tarjetas:", data.usr[0]);
         
         //creacion elementos usr encapsulado en una funcion
-        function usrCll() {
-            contenedorusr.innerHTML =`
-            <div class="imgCont">
-                <div>
-                <img src="${data.usr[0].img}" alt="imagen de usuario">
-                </div>
+        contenedorusr.innerHTML =`
+        <div class="imgCont">
+            <div>
+            <img src="${data.usr[0].img}" alt="imagen de usuario">
             </div>
-            <h2>${data.usr[0].nombre}</h2>
-            <p>${data.usr[0].descripcion}</p>
-            `;
-        }
-
-        usrCll(); //funcion de items  usr
+        </div>
+        <h2>${data.usr[0].nombre}</h2>
+        <p>${data.usr[0].descripcion}</p>
+        `;
 
         //Creacion div para los botnoes de red social
         const socialDiv = document.createElement('div');
@@ -46,7 +41,6 @@ fetch("./data/data.json")
             socialBtn.href = `${item.Url}`;
             /*socialBtn.setAttribute("onclick", `pendienteAlert()`);*/
             socialBtn.addEventListener("click", pendienteAlert);
-
 
             socialBtn.innerHTML = `
                 <img src="${item.Icon}" alt="imagen social" class = "imgContS"><span> ${item.Text} </span> 
@@ -82,11 +76,16 @@ fetch("./data/data.json")
             tarjeta.innerHTML = `             
             <h3><img src="${item.icon}" alt="imgtitulo" class="imgContT">${item.titulo}</h3>
             <p>${item.descripcion}</p>
-            <a href="${item.link}" target="_blank">Ver más</a>
+            <a >Ver más</a>
             `;
-
+            //se qutiro target blank a <a>
             contenedorTjts.appendChild(tarjeta);
         });
+
+        //establecer primer boton como activo (esto despues de crear las tarjetas para que se apilique el filtro, dentro de la fucnion fetch para no interumpirce o crear error en el dom)
+        const botonMenu = document.getElementsByClassName("botonMenu");
+        botonMenu[0].click();
+        
     })
     .catch(error => console.error("Error al procesar JSON:", error));
 
@@ -103,23 +102,12 @@ fetch("./data/data.json")
 
         // recorrer lista de clase botonName para aplicar el display block
         const tarjetasFiltradas = document.getElementsByClassName(botonName);
-        for (let j = 0; j < tarjetasFiltradas.length; j++) {
+        for ( j = 0; j < tarjetasFiltradas.length; j++) {
             tarjetasFiltradas[j].style.display = "block";
         }
-
-        botonMenu[0].setAttribute("id", "defaultSelectBoton");
-        
-        //seleccion primer elemento del menu
-        /*document.getElementById("defaultSelectBoton").click(); //seleccion primer elemento del menu*/
-
         evt.currentTarget.classList.add("active");
-
-
-
-        console.log(botonMenu.length);
-        console.log(evt);
     }   
     
-    function pendienteAlert (){
+    function pendienteAlert (){//remover al actualizar enlaces  y contnenido
         alert("elemento pendinete de agregar, pagina en proceso de desarrollo");
     }

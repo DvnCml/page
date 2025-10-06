@@ -41,6 +41,6 @@
     .texto-btn {display: none;} /*cambiar en version landscape*/
 
     .tarjeta {background: white; padding: 15px; margin: 10px; border-radius: 8px; box-shadow: 0 2px 5px rgba(70,80,90,0.25); width: 300px;}
-    .tarjeta h3 {font-size: 1.25em;  margin: 5px 0; padding-bottom: 10px;border-bottom: 2px solid slategrey;}
+    .tarjeta h3 {font-size: 1.25em;  margin: 5px 0; padding-bottom: 10px;border-bottom: 2px solid slategrey; height: 2em;}
     .tarjeta p {font-size: 1em; height: 3em;}
     .tarjeta a {margin-top: 10px;padding:15px 20px;float: right; background-color:dodgerblue; color: #f4f4f4; text-decoration: none;  border-radius: 10px;}
