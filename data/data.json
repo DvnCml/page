@@ -20,6 +20,7 @@
  "tarjeta":[
   {
     "class": "Dev",
+    "id":"0",
     "icon":"Img/Cards/iconDesc/square-code.svg",
     "titulo": "Lógica de programación y estructuras de datos",
     "descripcion": "Fundamentos del pensamiento computacional.",
@@ -29,6 +30,7 @@
   },
   {
     "class": "Dev",
+    "id":"1",
     "icon":"Img/Cards/iconDesc/square-code.svg",
     "titulo": "Desarrollo en Java",
     "descripcion": "Lenguaje orientado a objetos usado en aplicaciones robustas.",
@@ -38,6 +40,7 @@
   },
   {
     "class": "Dev",
+    "id":"2",
     "icon":"Img/Cards/iconDesc/square-code.svg",
     "titulo": "Desarrollo en Python",
     "descripcion": "Lenguaje versátil para múltiples áreas tecnológicas.",
@@ -47,6 +50,7 @@
   },
   {
     "class": "Dev",
+    "id":"3",
     "icon":"Img/Cards/iconDesc/square-code.svg",
     "titulo": "Conocimientos básicos en Web",
     "descripcion": "Bases de HTML, CSS y JavaScript.",
@@ -56,6 +60,7 @@
   },
   {
     "class": "Dev",
+    "id":"4",
     "icon":"Img/Cards/iconDesc/square-code.svg",
     "titulo": "Control de versiones con Git",
     "descripcion": "Gestión de cambios en proyectos de software.",
@@ -65,6 +70,7 @@
   },
   {
     "class": "Mecatronica",
+    "id":"5",
     "icon":"Img/Cards/iconDesc/bot.svg",
     "titulo": "Neumática y electroneumática",
     "descripcion": "Sistemas de control mediante aire comprimido y componentes eléctricos.",
@@ -74,6 +80,7 @@
   },
   {
     "class": "Mecatronica",
+    "id":"6",
     "icon":"Img/Cards/iconDesc/bot.svg",
     "titulo": "Motores eléctricos",
     "descripcion": "Conversión de energía eléctrica en movimiento mecánico.",
@@ -83,6 +90,7 @@
   },
   {
     "class": "Mecatronica",
+    "id":"7",
     "icon":"Img/Cards/iconDesc/bot.svg",
     "titulo": "Sensores y electrónica de potencia",
     "descripcion": "Dispositivos que permiten interacción y control de sistemas.",
@@ -92,6 +100,7 @@
   },
   {
     "class": "Mecatronica",
+    "id":"8",
     "icon":"Img/Cards/iconDesc/bot.svg",
     "titulo": "Control de sistemas",
     "descripcion": "Diseño y ajuste de controladores para regular procesos dinámicos.",
@@ -101,6 +110,7 @@
   },
   {
     "class": "Mecatronica",
+    "id":"9",
     "icon":"Img/Cards/iconDesc/bot.svg",
     "titulo": "Programación de PLCs y microcontroladores",
     "descripcion": "Automatización avanzada con controladores industriales y embebidos.",
@@ -110,6 +120,7 @@
   },
   {
     "class": "SoporteIT",
+    "id":"10",
     "icon":"Img/Cards/iconDesc/laptop-minimal-check.svg",
     "titulo": "Administración de sistemas operativos",
     "descripcion": "Gestión de Windows y Linux a nivel básico y avanzado.",
@@ -119,6 +130,7 @@
   },
   {
     "class": "SoporteIT",
+    "id":"11",
     "icon":"Img/Cards/iconDesc/laptop-minimal-check.svg",
     "titulo": "Redes básicas",
     "descripcion": "Conocimientos esenciales de TCP/IP y configuración de redes.",
@@ -128,6 +140,7 @@
   },
   {
     "class": "SoporteIT",
+    "id":"12",
     "icon":"Img/Cards/iconDesc/laptop-minimal-check.svg",
     "titulo": "Diagnóstico y solución de fallas",
     "descripcion": "Identificación y corrección de errores de hardware y software.",
@@ -137,6 +150,7 @@
   },
   {
     "class": "SoporteIT",
+    "id":"13",
     "icon":"Img/Cards/iconDesc/laptop-minimal-check.svg",
     "titulo": "Instalación y mantenimiento de aplicaciones",
     "descripcion": "Gestión del ciclo de vida de software en entornos de usuario.",
@@ -146,6 +160,7 @@
   },
   {
     "class": "SoporteIT",
+    "id":"14",
     "icon":"Img/Cards/iconDesc/laptop-minimal-check.svg",
     "titulo": "Seguridad básica en sistemas",
     "descripcion": "Protección de usuarios, datos y recursos en TI.",

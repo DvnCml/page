@@ -2,6 +2,8 @@ const BodyC = document.getElementById("BodyC");
 const contenedorusr = document.getElementById("contenedorusr");
 const contenedorBoton = document.getElementById("contenedorBoton");
 const contenedorTjts = document.getElementById("contenedorTjts");
+const detallesContainer = document.getElementById('detalles-container');
+const modal = document.getElementById("myModal");
 
 fetch("./data/data.json")
 
@@ -68,6 +70,7 @@ fetch("./data/data.json")
         });
 
         // tarjetas
+        let idCntndTarjetas = 0;
         data.tarjeta.forEach(item => {
             const tarjeta = document.createElement("div");
             tarjeta.classList= 'tarjeta';
@@ -76,16 +79,46 @@ fetch("./data/data.json")
             tarjeta.innerHTML = `             
             <h3><img src="${item.icon}" alt="imgtitulo" class="imgContT">${item.titulo}</h3>
             <p>${item.descripcion}</p>
-            <a >Ver más</a>
+            <a href="#" data-id="${item.id}">Ver mas</a>
             `;
-            //se qutiro target blank a <a>
+            //se selecciona a oara agregar el evento onclick para ir a la funcion mostrar detalles
+            tarjeta.querySelector('a').addEventListener('click', (e) => {
+            e.preventDefault();
+            mostrarDetalles(item.id);
+            });
+            
             contenedorTjts.appendChild(tarjeta);
         });
 
         //establecer primer boton como activo (esto despues de crear las tarjetas para que se apilique el filtro, dentro de la fucnion fetch para no interumpirce o crear error en el dom)
         const botonMenu = document.getElementsByClassName("botonMenu");
         botonMenu[0].click();
-        
+
+       //contenido tarjetas
+        function mostrarDetalles(id) {
+            const item = data.tarjeta.find(t => t.id === id);
+            if (!item) return;
+
+            // Limpiar contenido anterior
+            detallesContainer.innerHTML = `
+                <span class="closeCont">&times;</span>
+                <h3>${item.subtituloContenido}</h3>
+                <p>${item.contenido}</p>
+            `;
+            modal.style.display = "block";
+
+            //funcion de boton cerrar
+            const cerrarContTjts = document.getElementsByClassName("closeCont")[0];
+            // Asignar el evento de clic al botón
+            cerrarContTjts.onclick = cerrarPopUp;
+
+            // cerrar ventana al hacer click en cualquier lado de la ventana que no sea el modal
+            window.onclick = function(event) {
+            if (event.target == modal) {
+                cerrarPopUp();
+            }
+            }
+        }
     })
     .catch(error => console.error("Error al procesar JSON:", error));
 
@@ -111,3 +144,7 @@ fetch("./data/data.json")
     function pendienteAlert (){//remover al actualizar enlaces  y contnenido
         alert("elemento pendinete de agregar, pagina en proceso de desarrollo");
     }
+
+    function cerrarPopUp() {
+            modal.style.display = "none";
+        }
