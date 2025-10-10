@@ -17,156 +17,231 @@
     {"Icon": "Img/Cards/notebook-text.svg", "Text" : "Blog", "Link": "#"},
     {"Icon": "Img/Cards/square-user.svg", "Text" : "Aboutme", "Link": "#"}
 ],
- "tarjeta":[
-  {
-    "class": "Dev",
-    "id":"0",
-    "icon":"Img/Cards/iconDesc/square-code.svg",
-    "titulo": "Lógica de programación y estructuras de datos",
-    "descripcion": "Fundamentos del pensamiento computacional.",
-    "ideaImagen": "Diagrama de flujo y estructuras de datos básicas.",
-    "contenido": "La lógica de programación y las estructuras de datos son la base del desarrollo de software. Involucran el uso de algoritmos, condicionales, ciclos y estructuras como listas, pilas o colas. Estos conceptos son esenciales para resolver problemas de forma eficiente y sentar las bases de lenguajes como Java, Python o C.",
-    "subtituloContenido": "Pensamiento lógico aplicado"
-  },
-  {
-    "class": "Dev",
-    "id":"1",
-    "icon":"Img/Cards/iconDesc/square-code.svg",
-    "titulo": "Desarrollo en Java",
-    "descripcion": "Lenguaje orientado a objetos usado en aplicaciones robustas.",
-    "ideaImagen": "Logo de Java y un IDE con código abierto.",
-    "contenido": "Java es un lenguaje multiplataforma muy utilizado en aplicaciones empresariales, móviles (Android) y sistemas distribuidos. Su enfoque en la orientación a objetos, la portabilidad mediante la JVM (Java Virtual Machine) y su amplia comunidad lo hacen un lenguaje robusto y escalable. Aprender Java permite adentrarse en proyectos de gran complejidad.",
-    "subtituloContenido": "Introducción a Java"
-  },
-  {
-    "class": "Dev",
-    "id":"2",
-    "icon":"Img/Cards/iconDesc/square-code.svg",
-    "titulo": "Desarrollo en Python",
-    "descripcion": "Lenguaje versátil para múltiples áreas tecnológicas.",
-    "ideaImagen": "Logo de Python y ejemplos de código.",
-    "contenido": "Python es un lenguaje interpretado, de alto nivel y con gran facilidad de aprendizaje. Su uso abarca desde automatización de tareas, desarrollo web, análisis de datos, inteligencia artificial hasta prototipado rápido. Gracias a su sintaxis sencilla y su enorme ecosistema de librerías, es uno de los lenguajes más demandados en la industria.",
-    "subtituloContenido": "Python y su ecosistema"
-  },
-  {
-    "class": "Dev",
-    "id":"3",
-    "icon":"Img/Cards/iconDesc/square-code.svg",
-    "titulo": "Conocimientos básicos en Web",
-    "descripcion": "Bases de HTML, CSS y JavaScript.",
-    "ideaImagen": "Captura de una página simple en HTML.",
-    "contenido": "El desarrollo web inicia con HTML (estructura), CSS (estilo) y JavaScript (interactividad). Estos tres lenguajes forman la base para la creación de páginas y aplicaciones web modernas. Aunque existen frameworks avanzados, dominar lo básico asegura la capacidad de construir y comprender cualquier sitio desde cero.",
-    "subtituloContenido": "Fundamentos del desarrollo web"
-  },
-  {
-    "class": "Dev",
-    "id":"4",
-    "icon":"Img/Cards/iconDesc/square-code.svg",
-    "titulo": "Control de versiones con Git",
-    "descripcion": "Gestión de cambios en proyectos de software.",
-    "ideaImagen": "Logo de Git y flujo de ramas en un repositorio.",
-    "contenido": "Git es una herramienta fundamental para el trabajo colaborativo en desarrollo de software. Permite gestionar versiones del código, llevar historial de cambios, crear ramas de desarrollo y fusionar contribuciones de equipos. Su uso es esencial en proyectos profesionales y en plataformas como GitHub o GitLab.",
-    "subtituloContenido": "Colaboración y control de código"
-  },
-  {
-    "class": "Mecatronica",
-    "id":"5",
-    "icon":"Img/Cards/iconDesc/bot.svg",
-    "titulo": "Neumática y electroneumática",
-    "descripcion": "Sistemas de control mediante aire comprimido y componentes eléctricos.",
-    "ideaImagen": "Esquema de válvulas neumáticas y actuadores.",
-    "contenido": "La neumática y electroneumática constituyen una base fundamental en la automatización industrial. Estos sistemas utilizan aire comprimido como medio de trabajo para accionar actuadores, válvulas y sistemas de control. La electroneumática incorpora componentes eléctricos como relés y sensores, permitiendo mayor precisión, seguridad y flexibilidad en los procesos. Son esenciales en líneas de producción, empaquetado y sistemas automatizados.",
-    "subtituloContenido": "Principios básicos de la neumática"
-  },
-  {
-    "class": "Mecatronica",
-    "id":"6",
-    "icon":"Img/Cards/iconDesc/bot.svg",
-    "titulo": "Motores eléctricos",
-    "descripcion": "Conversión de energía eléctrica en movimiento mecánico.",
-    "ideaImagen": "Ilustración de un motor DC y un motor paso a paso.",
-    "contenido": "Los motores eléctricos son dispositivos que convierten energía eléctrica en movimiento mecánico. Existen varios tipos: DC, AC, servomotores y motores paso a paso. Cada uno ofrece ventajas específicas en aplicaciones industriales y de automatización. Los motores DC permiten un control preciso de la velocidad, los motores de inducción AC son robustos y económicos, los servomotores se usan en control de posición, y los motores paso a paso son clave en robótica y CNC.",
-    "subtituloContenido": "Tipos de motores y sus aplicaciones"
-  },
-  {
-    "class": "Mecatronica",
-    "id":"7",
-    "icon":"Img/Cards/iconDesc/bot.svg",
-    "titulo": "Sensores y electrónica de potencia",
-    "descripcion": "Dispositivos que permiten interacción y control de sistemas.",
-    "ideaImagen": "Sensores de proximidad, encoder y un módulo de potencia.",
-    "contenido": "Los sensores son esenciales para la retroalimentación en sistemas mecatrónicos, ya que permiten detectar variables como posición, temperatura, presión o velocidad. La electrónica de potencia, por su parte, se encarga de la conversión y control de energía eléctrica, gestionando la alimentación de motores y actuadores. La integración de sensores con módulos de potencia garantiza el funcionamiento eficiente y seguro de sistemas automatizados.",
-    "subtituloContenido": "Sensado y control de energía"
-  },
-  {
-    "class": "Mecatronica",
-    "id":"8",
-    "icon":"Img/Cards/iconDesc/bot.svg",
-    "titulo": "Control de sistemas",
-    "descripcion": "Diseño y ajuste de controladores para regular procesos dinámicos.",
-    "ideaImagen": "Gráfica de respuesta de un sistema con control PID.",
-    "contenido": "El control de sistemas estudia la respuesta dinámica de procesos físicos y cómo regularlos para obtener un desempeño deseado. Un ejemplo típico es el controlador PID (Proporcional, Integral y Derivativo), que se aplica en sistemas de temperatura, velocidad o posición. Este conocimiento permite desarrollar sistemas estables, seguros y precisos, fundamentales en la industria, la robótica y la automatización.",
-    "subtituloContenido": "Introducción al control PID"
-  },
-  {
-    "class": "Mecatronica",
-    "id":"9",
-    "icon":"Img/Cards/iconDesc/bot.svg",
-    "titulo": "Programación de PLCs y microcontroladores",
-    "descripcion": "Automatización avanzada con controladores industriales y embebidos.",
-    "ideaImagen": "Un PLC Siemens junto a una placa Arduino.",
-    "contenido": "La programación de PLCs (Controladores Lógicos Programables) es clave en la industria para controlar procesos complejos mediante lógica secuencial. Los microcontroladores, en cambio, se usan en sistemas embebidos y aplicaciones de menor escala, como Arduino o PIC. Ambos permiten la automatización avanzada, integrando sensores, actuadores y sistemas de comunicación. Dominar su programación abre la puerta al diseño de soluciones flexibles y escalables en la industria 4.0.",
-    "subtituloContenido": "De lo industrial a lo embebido"
-  },
-  {
-    "class": "SoporteIT",
-    "id":"10",
-    "icon":"Img/Cards/iconDesc/laptop-minimal-check.svg",
-    "titulo": "Administración de sistemas operativos",
-    "descripcion": "Gestión de Windows y Linux a nivel básico y avanzado.",
-    "ideaImagen": "Escritorio de Linux y Windows en paralelo.",
-    "contenido": "El soporte IT requiere conocimiento en la instalación, configuración y administración de sistemas operativos como Windows y Linux. Esto incluye manejo de usuarios, servicios, actualizaciones y resolución de problemas. Una base sólida en sistemas garantiza la capacidad de atender requerimientos técnicos en cualquier organización.",
-    "subtituloContenido": "Gestión de entornos operativos"
-  },
-  {
-    "class": "SoporteIT",
-    "id":"11",
-    "icon":"Img/Cards/iconDesc/laptop-minimal-check.svg",
-    "titulo": "Redes básicas",
-    "descripcion": "Conocimientos esenciales de TCP/IP y configuración de redes.",
-    "ideaImagen": "Diagrama de red con routers y switches.",
-    "contenido": "La comprensión de redes es vital para soporte IT. Esto incluye direccionamiento IP, configuración de routers, switches, protocolos básicos y resolución de problemas de conectividad. Conocer estos fundamentos permite garantizar que los sistemas funcionen de forma estable y segura.",
-    "subtituloContenido": "Fundamentos de redes"
-  },
-  {
-    "class": "SoporteIT",
-    "id":"12",
-    "icon":"Img/Cards/iconDesc/laptop-minimal-check.svg",
-    "titulo": "Diagnóstico y solución de fallas",
-    "descripcion": "Identificación y corrección de errores de hardware y software.",
-    "ideaImagen": "Un técnico reparando un PC de escritorio.",
-    "contenido": "El diagnóstico de fallas es una de las tareas principales del soporte IT. Involucra identificar problemas en hardware (fuentes, discos, memorias), así como software (drivers, incompatibilidades, fallas de sistema). Una metodología clara de diagnóstico permite reducir tiempos de inactividad y garantizar continuidad operativa.",
-    "subtituloContenido": "Resolviendo problemas técnicos"
-  },
-  {
-    "class": "SoporteIT",
-    "id":"13",
-    "icon":"Img/Cards/iconDesc/laptop-minimal-check.svg",
-    "titulo": "Instalación y mantenimiento de aplicaciones",
-    "descripcion": "Gestión del ciclo de vida de software en entornos de usuario.",
-    "ideaImagen": "Pantalla de instalación de software en Windows.",
-    "contenido": "Consiste en instalar, actualizar y mantener aplicaciones en sistemas de usuario o servidores. Esto requiere compatibilidad de versiones, configuración adecuada y monitoreo de su rendimiento. Un buen manejo de software garantiza eficiencia y productividad en el entorno de trabajo.",
-    "subtituloContenido": "Gestión de aplicaciones"
-  },
-  {
-    "class": "SoporteIT",
-    "id":"14",
-    "icon":"Img/Cards/iconDesc/laptop-minimal-check.svg",
-    "titulo": "Seguridad básica en sistemas",
-    "descripcion": "Protección de usuarios, datos y recursos en TI.",
-    "ideaImagen": "Candado digital sobre un fondo de código binario.",
-    "contenido": "La seguridad informática es un pilar en soporte IT. Involucra la gestión de usuarios y permisos, aplicación de políticas de contraseñas seguras, copias de respaldo y protección contra malware. Aunque existen soluciones avanzadas, la seguridad básica es esencial para prevenir incidentes en cualquier organización.",
-    "subtituloContenido": "Ciberseguridad en soporte"
-  }
-]
+ "tarjeta": [
+    {
+      "class": "Dev",
+      "id": "0",
+      "icon": "Img/Cards/iconDesc/square-code.svg",
+      "titulo": "Lógica de programación y estructuras de datos",
+      "descripcion": "Capacidad para analizar problemas y desarrollar algoritmos eficientes.",
+      "ideaImagen": "Diagrama de flujo y estructuras de datos básicas.",
+      "contenido": [
+        {
+          "subtituloContenido": "Pensamiento lógico aplicado",
+          "imgContt": "Img/Contenido/logic-programming.jpg",
+          "descripcionCompleta": "Poseo habilidades sólidas en el razonamiento lógico y estructuración de algoritmos. Manejo estructuras de datos como listas, pilas y colas, aplicadas al desarrollo de soluciones eficientes. Estas competencias son la base para un desempeño técnico consistente en cualquier lenguaje de programación."
+        }
+      ]
+    },
+    {
+      "class": "Dev",
+      "id": "1",
+      "icon": "Img/Cards/iconDesc/square-code.svg",
+      "titulo": "Desarrollo en Java",
+      "descripcion": "Dominio de la programación orientada a objetos con enfoque en aplicaciones escalables.",
+      "ideaImagen": "Logo de Java y un IDE con código abierto.",
+      "contenido": [
+        {
+          "subtituloContenido": "Introducción a Java",
+          "imgContt": "Img/Contenido/java-dev.jpg",
+          "descripcionCompleta": "Cuento con experiencia en Java para la creación de aplicaciones robustas y modulares. Manejo conceptos como clases, herencia, encapsulamiento y uso de librerías estándar. Puedo desarrollar, mantener y documentar código limpio y adaptable a distintos entornos de ejecución."
+        }
+      ]
+    },
+    {
+      "class": "Dev",
+      "id": "2",
+      "icon": "Img/Cards/iconDesc/square-code.svg",
+      "titulo": "Desarrollo en Python",
+      "descripcion": "Habilidad para crear soluciones versátiles con Python en diversos entornos.",
+      "ideaImagen": "Logo de Python y ejemplos de código.",
+      "contenido": [
+        {
+          "subtituloContenido": "Python y su ecosistema",
+          "imgContt": "Img/Contenido/python-dev.jpg",
+          "descripcionCompleta": "Manejo Python como lenguaje principal para automatización, análisis de datos y desarrollo de aplicaciones. Aprovecho su sintaxis clara y su amplia librería de módulos para implementar soluciones prácticas, manteniendo estándares de legibilidad y eficiencia en el código."
+        }
+      ]
+    },
+    {
+      "class": "Dev",
+      "id": "3",
+      "icon": "Img/Cards/iconDesc/square-code.svg",
+      "titulo": "Conocimientos básicos en Web",
+      "descripcion": "Competencia en desarrollo front-end con HTML, CSS y JavaScript.",
+      "ideaImagen": "Captura de una página simple en HTML.",
+      "contenido": [
+        {
+          "subtituloContenido": "Fundamentos del desarrollo web",
+          "imgContt": "Img/Contenido/web-basics.jpg",
+          "descripcionCompleta": "Domino los principios básicos de la construcción de sitios web utilizando HTML para la estructura, CSS para el diseño y JavaScript para la interactividad. Esta base me permite comprender e implementar interfaces funcionales y adaptables a distintos dispositivos."
+        }
+      ]
+    },
+    {
+      "class": "Dev",
+      "id": "4",
+      "icon": "Img/Cards/iconDesc/square-code.svg",
+      "titulo": "Control de versiones con Git",
+      "descripcion": "Capacidad para gestionar versiones y colaborar en proyectos de software.",
+      "ideaImagen": "Logo de Git y flujo de ramas en un repositorio.",
+      "contenido": [
+        {
+          "subtituloContenido": "Colaboración y control de código",
+          "imgContt": "Img/Contenido/git-control.jpg",
+          "descripcionCompleta": "Manejo Git para el control de versiones y trabajo colaborativo en proyectos. Sé crear ramas, fusionar cambios y resolver conflictos de código, garantizando trazabilidad y organización en el desarrollo. Utilizo GitHub y GitLab para repositorios y despliegue de proyectos."
+        }
+      ]
+    },
+    {
+      "class": "Mecatronica",
+      "id": "5",
+      "icon": "Img/Cards/iconDesc/bot.svg",
+      "titulo": "Neumática y electroneumática",
+      "descripcion": "Experiencia en diseño y control de sistemas neumáticos industriales.",
+      "ideaImagen": "Esquema de válvulas neumáticas y actuadores.",
+      "contenido": [
+        {
+          "subtituloContenido": "Principios básicos de la neumática",
+          "imgContt": "Img/Contenido/neumatica-sistema.jpg",
+          "descripcionCompleta": "Poseo conocimientos en la interpretación de planos, montaje y diagnóstico de sistemas neumáticos y electroneumáticos. Comprendo el uso de actuadores, válvulas y sensores para el control de procesos automatizados en entornos industriales."
+        }
+      ]
+    },
+    {
+      "class": "Mecatronica",
+      "id": "6",
+      "icon": "Img/Cards/iconDesc/bot.svg",
+      "titulo": "Motores eléctricos",
+      "descripcion": "Conocimientos en control, selección y mantenimiento de motores eléctricos.",
+      "ideaImagen": "Ilustración de un motor DC y un motor paso a paso.",
+      "contenido": [
+        {
+          "subtituloContenido": "Tipos de motores y sus aplicaciones",
+          "imgContt": "Img/Contenido/motores-electricos.jpg",
+          "descripcionCompleta": "Cuento con habilidades en el reconocimiento, conexión y control de motores DC, AC, servomotores y paso a paso. Comprendo los principios electromecánicos que rigen su funcionamiento y su aplicación en automatización, robótica y sistemas de control."
+        }
+      ]
+    },
+    {
+      "class": "Mecatronica",
+      "id": "7",
+      "icon": "Img/Cards/iconDesc/bot.svg",
+      "titulo": "Sensores y electrónica de potencia",
+      "descripcion": "Capacidad para integrar sensores y módulos de potencia en sistemas automatizados.",
+      "ideaImagen": "Sensores de proximidad, encoder y un módulo de potencia.",
+      "contenido": [
+        {
+          "subtituloContenido": "Sensado y control de energía",
+          "imgContt": "Img/Contenido/sensores-potencia.jpg",
+          "descripcionCompleta": "Integro sensores analógicos y digitales en sistemas de control, asegurando mediciones precisas y confiables. Conozco el manejo de electrónica de potencia para alimentar y proteger motores, relés y actuadores, garantizando un funcionamiento seguro del sistema completo."
+        }
+      ]
+    },
+    {
+      "class": "Mecatronica",
+      "id": "8",
+      "icon": "Img/Cards/iconDesc/bot.svg",
+      "titulo": "Control de sistemas",
+      "descripcion": "Competencia en diseño, modelado y ajuste de sistemas de control.",
+      "ideaImagen": "Gráfica de respuesta de un sistema con control PID.",
+      "contenido": [
+        {
+          "subtituloContenido": "Introducción al control PID",
+          "imgContt": "Img/Contenido/control-sistemas.jpg",
+          "descripcionCompleta": "Aplico conceptos de control automático mediante el uso de controladores PID para regular variables físicas como velocidad, temperatura y posición. Manejo herramientas básicas de simulación y análisis para garantizar estabilidad y precisión en los procesos."
+        }
+      ]
+    },
+    {
+      "class": "Mecatronica",
+      "id": "9",
+      "icon": "Img/Cards/iconDesc/bot.svg",
+      "titulo": "Programación de PLCs y microcontroladores",
+      "descripcion": "Desarrollo de sistemas automatizados con PLCs y microcontroladores embebidos.",
+      "ideaImagen": "Un PLC Siemens junto a una placa Arduino.",
+      "contenido": [
+        {
+          "subtituloContenido": "De lo industrial a lo embebido",
+          "imgContt": "Img/Contenido/plc-microcontrolador.jpg",
+          "descripcionCompleta": "Programo controladores lógicos programables y microcontroladores para automatizar procesos. Manejo entornos como TIA Portal, Arduino IDE y lenguajes estructurados para integrar sensores, actuadores y comunicación de datos en sistemas industriales y embebidos."
+        }
+      ]
+    },
+    {
+      "class": "SoporteIT",
+      "id": "10",
+      "icon": "Img/Cards/iconDesc/laptop-minimal-check.svg",
+      "titulo": "Administración de sistemas operativos",
+      "descripcion": "Gestión técnica de sistemas Windows y Linux en entornos operativos mixtos.",
+      "ideaImagen": "Escritorio de Linux y Windows en paralelo.",
+      "contenido": [
+        {
+          "subtituloContenido": "Gestión de entornos operativos",
+          "imgContt": "Img/Contenido/admin-sistemas.jpg",
+          "descripcionCompleta": "Realizo instalación, configuración y mantenimiento de sistemas Windows y Linux. Administro usuarios, servicios y políticas de seguridad, asegurando la estabilidad, rendimiento y disponibilidad de los entornos informáticos en uso."
+        }
+      ]
+    },
+    {
+      "class": "SoporteIT",
+      "id": "11",
+      "icon": "Img/Cards/iconDesc/laptop-minimal-check.svg",
+      "titulo": "Redes básicas",
+      "descripcion": "Conocimientos en infraestructura de red y protocolos de comunicación.",
+      "ideaImagen": "Diagrama de red con routers y switches.",
+      "contenido": [
+        {
+          "subtituloContenido": "Fundamentos de redes",
+          "imgContt": "Img/Contenido/redes-basicas.jpg",
+          "descripcionCompleta": "Comprendo la estructura de redes TCP/IP, direccionamiento, configuración de routers, switches y diagnóstico de conectividad. Puedo implementar redes locales seguras y optimizadas para garantizar comunicación eficiente entre dispositivos."
+        }
+      ]
+    },
+    {
+      "class": "SoporteIT",
+      "id": "12",
+      "icon": "Img/Cards/iconDesc/laptop-minimal-check.svg",
+      "titulo": "Diagnóstico y solución de fallas",
+      "descripcion": "Habilidad para detectar y resolver problemas en hardware y software.",
+      "ideaImagen": "Un técnico reparando un PC de escritorio.",
+      "contenido": [
+        {
+          "subtituloContenido": "Resolviendo problemas técnicos",
+          "imgContt": "Img/Contenido/diagnostico-it.jpg",
+          "descripcionCompleta": "Identifico y soluciono fallas en componentes de hardware, sistemas operativos y software. Aplico metodologías de diagnóstico rápido y técnicas preventivas para minimizar el tiempo de inactividad y mantener la continuidad operativa de los sistemas."
+        }
+      ]
+    },
+    {
+      "class": "SoporteIT",
+      "id": "13",
+      "icon": "Img/Cards/iconDesc/laptop-minimal-check.svg",
+      "titulo": "Instalación y mantenimiento de aplicaciones",
+      "descripcion": "Capacidad para administrar software y asegurar su funcionamiento eficiente.",
+      "ideaImagen": "Pantalla de instalación de software en Windows.",
+      "contenido": [
+        {
+          "subtituloContenido": "Gestión de aplicaciones",
+          "imgContt": "Img/Contenido/software-install.jpg",
+          "descripcionCompleta": "Realizo instalación, actualización y configuración de aplicaciones de usuario y servidor. Garantizo compatibilidad, rendimiento y mantenimiento continuo, adaptando las herramientas a los requerimientos técnicos de cada entorno."
+        }
+      ]
+    },
+    {
+      "class": "SoporteIT",
+      "id": "14",
+      "icon": "Img/Cards/iconDesc/laptop-minimal-check.svg",
+      "titulo": "Seguridad básica en sistemas",
+      "descripcion": "Competencia en protección de datos y seguridad operativa en entornos TI.",
+      "ideaImagen": "Candado digital sobre un fondo de código binario.",
+      "contenido": [
+        {
+          "subtituloContenido": "Ciberseguridad en soporte",
+          "imgContt": "Img/Contenido/seguridad-ti.jpg",
+          "descripcionCompleta": "Implemento prácticas de seguridad informática como control de usuarios, políticas de contraseñas seguras, copias de respaldo y medidas contra malware. Promuevo la prevención de incidentes y la integridad de los sistemas informáticos en operación."
+        }
+      ]
+    }
+  ]
 }

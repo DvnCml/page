@@ -96,14 +96,14 @@ fetch("./data/data.json")
 
        //contenido tarjetas
         function mostrarDetalles(id) {
-            const item = data.tarjeta.find(t => t.id === id);
+            const item = data.tarjeta.find(t => t.id === id);//busqyueda de descripcion por id
             if (!item) return;
 
             // Limpiar contenido anterior
             detallesContainer.innerHTML = `
                 <span class="closeCont">&times;</span>
-                <h3>${item.subtituloContenido}</h3>
-                <p>${item.contenido}</p>
+                <h3>${item.contenido[0].subtituloContenido}</h3>
+                <p>${item.contenido[0].descripcionCompleta}</p>
             `;
             modal.style.display = "block";
 
