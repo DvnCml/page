@@ -51,3 +51,8 @@
 
     .closeCont { color: #aaaaaa; float: right; font-size: 2em; font-weight: bold;}/* The Close Button */
     .closeCont:hover, .closeCont:focus {color: #000; text-decoration: none; cursor: pointer;}
+
+    @media only screen and (orientation: landscape) {
+        .imgContB{vertical-align:top}
+        .texto-btn {display: block; font-size: 1.125em; float: right}
+    }
