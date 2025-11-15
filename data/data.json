@@ -11,6 +11,7 @@
   ],
 
 "boton" : [
+    {"Icon": "Img/Cards/iconDesc/medal.svg", "Text" : "Cert", "Link": "#"},
     {"Icon": "Img/Cards/square-terminal.svg", "Text" : "Dev", "Link": "#"},
     {"Icon": "Img/Cards/iconDesc/bot.svg", "Text" : "Mecatronica", "Link": "#"},
     {"Icon": "Img/Cards/iconDesc/wrench.svg", "Text" : "SoporteIT", "Link": "#"},
@@ -242,6 +243,112 @@
           "descripcionCompleta": "Implemento prácticas de seguridad informática como control de usuarios, políticas de contraseñas seguras, copias de respaldo y medidas contra malware. Promuevo la prevención de incidentes y la integridad de los sistemas informáticos en operación."
         }
       ]
-    }
+    },
+     {
+    "class": "Cert",
+    "id": "15",
+    "icon": "Img/Cards/iconDesc/medal.svg",
+    "titulo": "Desarrollo Backend y Java",
+    "descripcion": "Certificados relacionados con Java, APIs, Spring y programación backend.",
+    "ideaImagen": "",
+    "contenido": [
+      {
+        "subtituloContenido": "Desarrollo Backend y Java",
+        "imgContt": "",
+        "descripcionCompleta": "Java OOP · APIs REST · Spring Boot · Spring Framework · JPA · Colecciones · Lambdas/Streams · Consumo de APIs · Manejo de archivos · Challenges: Conversor de Monedas, LiterAlura, Foro Hub."
+      }
+    ]
+  },
+  {
+    "class": "Cert",
+    "id": "16",
+    "icon": "Img/Cards/iconDesc/medal.svg",
+    "titulo": "Desarrollo Web / Front-End",
+    "descripcion": "Certificados orientados a fundamentos web, HTML, CSS y JavaScript.",
+    "ideaImagen": "",
+    "contenido": [
+      {
+        "subtituloContenido": "Desarrollo Web / Front-End",
+        "imgContt": "",
+        "descripcionCompleta": "Lógica de Programación con JavaScript · Principiante en Programación · Lógica de programación: funciones y listas · HTML y CSS: estructura, Flexbox, variables, responsividad."
+      }
+    ]
+  },
+  {
+    "class": "Cert",
+    "id": "17",
+    "icon": "Img/Cards/iconDesc/medal.svg",
+    "titulo": "Frameworks, APIs y Arquitectura",
+    "descripcion": "Certificados centrados en Spring Boot, API REST y buenas prácticas.",
+    "ideaImagen": "",
+    "contenido": [
+      {
+        "subtituloContenido": "Frameworks, APIs y Arquitectura",
+        "imgContt": "",
+        "descripcionCompleta": "Spring Boot 3 (API REST, seguridad, mejores prácticas, documentación y pruebas) · Challenge LiterAlura · Challenge Foro Hub · Spring AI."
+      }
+    ]
+  },
+  {
+    "class": "Cert",
+    "id": "18",
+    "icon": "Img/Cards/iconDesc/medal.svg",
+    "titulo": "Herramientas, Sistemas y DevOps",
+    "descripcion": "Certificados sobre Git, Linux, Docker y servicios cloud.",
+    "ideaImagen": "",
+    "contenido": [
+      {
+        "subtituloContenido": "Herramientas, Sistemas y DevOps",
+        "imgContt": "",
+        "descripcionCompleta": "Git y GitHub · Linux (terminal) · Docker · Oracle Cloud Infrastructure (OCI Fundamentals)."
+      }
+    ]
+  },
+  {
+    "class": "Cert",
+    "id": "19",
+    "icon": "Img/Cards/iconDesc/medal.svg",
+    "titulo": "IA, Integración Tecnológica y Redes",
+    "descripcion": "Certificados sobre inteligencia artificial aplicada y fundamentos de redes.",
+    "ideaImagen": "",
+    "contenido": [
+      {
+        "subtituloContenido": "IA, Integración Tecnológica y Redes",
+        "imgContt": "",
+        "descripcionCompleta": "Inteligencia Artificial con Java · Redes: conceptos y práctica."
+      }
+    ]
+  },
+  {
+    "class": "Cert",
+    "id": "20",
+    "icon": "Img/Cards/iconDesc/medal.svg",
+    "titulo": "Productividad y ChatGPT",
+    "descripcion": "Certificados sobre uso de IA para productividad y optimización de resultados.",
+    "ideaImagen": "",
+    "contenido": [
+      {
+        "subtituloContenido": "Productividad y ChatGPT",
+        "imgContt": "",
+        "descripcionCompleta": "ChatGPT para programación · Optimización de prompts y resultados."
+      }
+    ]
+  },
+  {
+    "class": "Cert",
+    "id": "21",
+    "icon": "Img/Cards/iconDesc/medal.svg",
+    "titulo": "Desarrollo Profesional y Agilidad",
+    "descripcion": "Certificados orientados a carrera, agilidad, hábitos y liderazgo personal.",
+    "ideaImagen": "",
+    "contenido": [
+      {
+        "subtituloContenido": "Desarrollo Profesional",
+        "imgContt": "",
+        "descripcionCompleta": "Agilidad · Emprendimiento · Protagonismo Profesional · Productividad · Hábitos · Foco · Transición a tecnología · Optimización de perfil de LinkedIn."
+      }
+    ]
+  }
+
   ]
 }
