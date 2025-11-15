@@ -1,6 +1,6 @@
 {
 "usr" : [
-    {"img":"Img/Usr/user1.svg", "nombre":"Dvn", "descripcion":"Pag en proceso de desarrollo <br><br> Desarrollador java con conocimientos en python y front (HTML CSS JS), formado en mecatronica. <br><br> Filosofia analisis, documentacion, lapiz y papel.<br>"}
+    {"img":"Img/Usr/user1.svg", "nombre":"Dvn", "descripcion":"Pag en proceso de desarrollo <br> <br><br> <br> Desarrollador java con conocimientos en python y front (HTML CSS JS), formado en mecatronica. <br> <br><br> <br> Filosofia analisis, documentacion, lapiz y papel.<br> <br>"}
 ],
 
 "social" : [
@@ -255,7 +255,7 @@
       {
         "subtituloContenido": "Desarrollo Backend y Java",
         "imgContt": "",
-        "descripcionCompleta": "Java OOP · APIs REST · Spring Boot · Spring Framework · JPA · Colecciones · Lambdas/Streams · Consumo de APIs · Manejo de archivos · Challenges: Conversor de Monedas, LiterAlura, Foro Hub."
+        "descripcionCompleta": "Java OOP · APIs REST · Spring Boot · Spring Framework · JPA · Colecciones · Lambdas/Streams · Consumo de APIs · Manejo de archivos · Challenges: Conversor de Monedas, LiterAlura, Foro Hub.<br> <br> Estos certificados son fundamentales para quienes buscan desarrollar aplicaciones robustas y escalables. El dominio de Java y sus frameworks permite crear soluciones eficientes que son altamente demandadas en el mercado laboral actual."
       }
     ]
   },
@@ -270,7 +270,7 @@
       {
         "subtituloContenido": "Desarrollo Web / Front-End",
         "imgContt": "",
-        "descripcionCompleta": "Lógica de Programación con JavaScript · Principiante en Programación · Lógica de programación: funciones y listas · HTML y CSS: estructura, Flexbox, variables, responsividad."
+        "descripcionCompleta": "Lógica de Programación con JavaScript · Principiante en Programación · Lógica de programación: funciones y listas · HTML y CSS: estructura, Flexbox, variables, responsividad.<br> <br> Estos certificados son esenciales para los futuros desarrolladores web, ya que proporcionan los conocimientos necesarios para crear interfaces atractivas y funcionales, lo que mejora la experiencia del usuario y es crucial en la era digital."
       }
     ]
   },
@@ -285,7 +285,7 @@
       {
         "subtituloContenido": "Frameworks, APIs y Arquitectura",
         "imgContt": "",
-        "descripcionCompleta": "Spring Boot 3 (API REST, seguridad, mejores prácticas, documentación y pruebas) · Challenge LiterAlura · Challenge Foro Hub · Spring AI."
+        "descripcionCompleta": "Spring Boot 3 (API REST, seguridad, mejores prácticas, documentación y pruebas) · Challenge LiterAlura · Challenge Foro Hub · Spring AI.<br> <br> Estos certificados proporcionan herramientas y conocimientos que son vitales para construir sistemas escalables y seguros. Comprender la arquitectura de APIs y emplear buenas prácticas es crucial para el desarrollo moderno, donde la integración y la eficiencia son clave."
       }
     ]
   },
@@ -300,7 +300,7 @@
       {
         "subtituloContenido": "Herramientas, Sistemas y DevOps",
         "imgContt": "",
-        "descripcionCompleta": "Git y GitHub · Linux (terminal) · Docker · Oracle Cloud Infrastructure (OCI Fundamentals)."
+        "descripcionCompleta": "Git y GitHub · Linux (terminal) · Docker · Oracle Cloud Infrastructure (OCI Fundamentals).<br> <br> La familiaridad con estas herramientas es crucial en el entorno laboral actual, donde DevOps se ha convertido en un estándar. Estos certificados equipan a los profesionales con las habilidades necesarias para colaborar eficazmente en equipos y optimizar procesos de desarrollo."
       }
     ]
   },
@@ -315,40 +315,40 @@
       {
         "subtituloContenido": "IA, Integración Tecnológica y Redes",
         "imgContt": "",
-        "descripcionCompleta": "Inteligencia Artificial con Java · Redes: conceptos y práctica."
+        "descripcionCompleta": "Inteligencia Artificial con Java · Redes: conceptos y práctica.<br> <br> Estos certificados son cada vez más relevantes en un mundo donde la inteligencia artificial y la conectividad son la norma. Proporcionan conocimientos críticos para implementar soluciones que mejoren la eficiencia y potencia de las tecnologías actuales."
       }
     ]
   },
   {
-    "class": "Cert",
-    "id": "20",
-    "icon": "Img/Cards/iconDesc/medal.svg",
-    "titulo": "Productividad y ChatGPT",
-    "descripcion": "Certificados sobre uso de IA para productividad y optimización de resultados.",
-    "ideaImagen": "",
-    "contenido": [
-      {
-        "subtituloContenido": "Productividad y ChatGPT",
-        "imgContt": "",
-        "descripcionCompleta": "ChatGPT para programación · Optimización de prompts y resultados."
-      }
-    ]
-  },
-  {
-    "class": "Cert",
-    "id": "21",
-    "icon": "Img/Cards/iconDesc/medal.svg",
-    "titulo": "Desarrollo Profesional y Agilidad",
-    "descripcion": "Certificados orientados a carrera, agilidad, hábitos y liderazgo personal.",
-    "ideaImagen": "",
-    "contenido": [
-      {
-        "subtituloContenido": "Desarrollo Profesional",
-        "imgContt": "",
-        "descripcionCompleta": "Agilidad · Emprendimiento · Protagonismo Profesional · Productividad · Hábitos · Foco · Transición a tecnología · Optimización de perfil de LinkedIn."
-      }
-    ]
-  }
+  "class": "Cert",
+  "id": "20",
+  "icon": "Img/Cards/iconDesc/medal.svg",
+  "titulo": "Productividad y ChatGPT",
+  "descripcion": "Certificados sobre uso de IA para productividad y optimización de resultados.",
+  "ideaImagen": "",
+  "contenido": [
+    {
+      "subtituloContenido": "Productividad y ChatGPT",
+      "imgContt": "",
+      "descripcionCompleta": "ChatGPT para programación · Optimización de prompts y resultados.<br> <br> Estos certificados son vitales en el entorno laboral actual, donde el uso de inteligencia artificial puede transformar la manera en que trabajamos. Aprender a utilizar herramientas como ChatGPT permite a los profesionales mejorar su productividad y creatividad, optimizando procesos y resultados en sus proyectos."
+    }
+  ]
+},
+{
+  "class": "Cert",
+  "id": "21",
+  "icon": "Img/Cards/iconDesc/medal.svg",
+  "titulo": "Desarrollo Profesional y Agilidad",
+  "descripcion": "Certificados orientados a carrera, agilidad, hábitos y liderazgo personal.",
+  "ideaImagen": "",
+  "contenido": [
+    {
+      "subtituloContenido": "Desarrollo Profesional",
+      "imgContt": "",
+      "descripcionCompleta": "Agilidad · Emprendimiento · Protagonismo Profesional · Productividad · Hábitos · Foco · Transición a tecnología · Optimización de perfil de LinkedIn.<br> <br> Estos certificados son fundamentales para aquellos que desean avanzar en su carrera profesional. Fomentan habilidades que permiten adaptarse a un entorno laboral en constante cambio, ayudando a los profesionales a desarrollar hábitos efectivos y a sobresalir en el uso de plataformas como LinkedIn para maximizar oportunidades."
+    }
+  ]
+}
 
   ]
 }
