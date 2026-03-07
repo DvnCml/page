@@ -16,7 +16,6 @@
     {"Icon": "Img/Cards/iconDesc/bot.svg", "Text" : "Mecatronica", "Link": "#"},
     {"Icon": "Img/Cards/iconDesc/wrench.svg", "Text" : "SoporteIT", "Link": "#"},
     {"Icon": "Img/Cards/notebook-text.svg", "Text" : "Blog", "Link": "#"},
-    {"Icon": "Img/Cards/square-user.svg", "Text" : "Aboutme", "Link": "#"},
     {"Icon": "Img/Cards/square-user.svg", "Text" : "Aboutme", "Link": "#"}
 ],
  "tarjeta": [
